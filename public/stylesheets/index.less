@@ -1,0 +1,71 @@
+@import "base";
+
+@blockHeight: 100px;
+@stepBackgroundColorBase: #fffaf0;
+
+div.content {
+  .box-flex(1);
+}
+
+div.step {
+  background-color: @stepBackgroundColorBase;
+  text-align: center;
+
+  table {
+    height: 100%;
+    width: 100%;
+    border-collapse: collapse;
+
+    tr td:last-child {
+      color: #888;
+
+      > * {
+        margin: 0 0.5em;
+      }
+    }
+
+    tr td:first-child {
+      width: 33%;
+      color: @mainColor;
+      font-size: 4em;
+      text-align: left;
+      padding-left: 1em;
+    }
+  }
+}
+
+div#step2 {
+  background-color: @stepBackgroundColorBase - 5;
+}
+
+div#step3 {
+  background-color: @stepBackgroundColorBase - 10;
+}
+
+#fileToUpload {
+  border: 1px solid #000000;
+  position: absolute;
+  opacity: 0;
+  margin: 0;
+}
+
+div#imageButtonStyle {
+  display: inline-block;
+  background-color: darkgray;
+  .reflect(70%,0.2);
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+footer {
+  text-align: right;
+
+  span {
+    line-height: @headerHeight + 4;
+    margin: 0 0.5em;
+    color: darkgray;
+  }
+}

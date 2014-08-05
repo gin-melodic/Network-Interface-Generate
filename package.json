@@ -1,0 +1,24 @@
+{
+  "name": "NetworkInterfaceGenerate",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "express": "~4.2.0",
+    "static-favicon": "~1.0.0",
+    "morgan": "~1.0.0",
+    "cookie-parser": "~1.0.1",
+    "body-parser": "~1.0.0",
+    "debug": "~0.7.4",
+    "jade": "~1.3.0",
+    "less-middleware": "1.0.x",
+    "excel-parser" : "0.2.2",
+    "connect-busboy" : "latest",
+    "archiver": "latest",
+    "rimraf":"2.2.8",
+    "sleep":"1.1.8",
+    "log4js":"0.6.14"
+  }
+}

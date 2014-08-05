@@ -1,0 +1,42 @@
+//
+   Created by gin on 14-6-20.
+extends layout
+block append head_content
+  link(rel='stylesheet', href='/stylesheets/index.css')
+  script(src='/javascripts/ajaxfileupload.js')
+  script(src='/javascripts/index.js')
+block content
+  header
+    p 接口定义自动生成
+  div.content
+    div#step1.step
+      table
+        tr
+          td.stepTitle Step1:
+          td
+            span Upload
+            div#imageButtonStyle
+              img#fileUploadIcon(src='/images/excelLogo.png')
+            input#fileToUpload(type='file',name='fileUploader')
+            span#fileNameShow
+    div#step2.step
+      table
+        tr
+          td.stepTitle Step2:
+          td
+            span 请选择生成版本：
+            input.button.large(type='button',value='生成Objective-C版本',onclick='fileUpload(0);')
+            input.button.large(type='button',value='生成Java版本',onclick='fileUpload(1);')
+            //input.button.large(type='button',value='全部生成',onclick='fileUpload(2);')
+    div#step3.step
+      table
+        tr
+          td.stepTitle Step3:
+          td
+            input#download.button.large.blue(type='button',value='生成文件下载')
+  div.dialogBG
+  div.dialog-warp
+    div.dialog-content
+      p 请稍候
+  footer
+    span 如有问题请联系gin,谢谢！
